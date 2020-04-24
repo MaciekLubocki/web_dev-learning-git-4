@@ -11,6 +11,10 @@ body {
   font-family: "Baloo Paaji 2", cursive;
 }
 
+.a13 {
+  border: 2px red solid;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
@@ -128,7 +132,7 @@ nav {
 }
 
 .icon_position {
-  position: absolute;
+  position: relative;
   top: 60px;
   left: 10px;
   width: 70vw;
@@ -278,5 +282,83 @@ nav {
 
 .social_icon:hover {
   transform: scale(1.5);
+}
+
+/*MEDIA*/
+@media (max-width: 767px) {
+  nav .navibar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+  }
+  .menu li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .navibar h1 {
+    text-align: center;
+    color: brown;
+  }
+  .header h2,
+  .header h1 {
+    font-size: 20px;
+  }
+  .welcome {
+    padding: 20px;
+  }
+  .btn {
+    display: none;
+  }
+  .icon_position {
+    display: block;
+  }
+  .portfolio .gallery {
+    display: block;
+    text-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .image img {
+    display: block;
+    text-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .picture {
+    position: relative;
+    display: block;
+    left: 20%;
+    text-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .picture_description {
+    position: relative;
+    display: block;
+    left: 30%;
+    text-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 200px;
+  }
+  .services {
+    display: block;
+    position: relative;
+  }
+  .services_icons {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
