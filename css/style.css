@@ -179,8 +179,8 @@ nav {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-preferred-size: 33.3333%;
-      flex-basis: 33.3333%;
+  -ms-flex-preferred-size: 33.333%;
+      flex-basis: 33.333%;
   -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
   -ms-flex-wrap: wrap;
@@ -190,10 +190,10 @@ nav {
 .picture {
   width: 100px;
   list-style: none;
-  -ms-flex: 0 0 33.333333%;
-      flex: 0 0 33.333333%;
+  -ms-flex: 0 0 25.333333%;
+      flex: 0 0 25.333333%;
   text-align: center;
-  padding: 2rem 1rem;
+  margin: 2rem 1rem;
 }
 
 .image {
@@ -203,7 +203,7 @@ nav {
 }
 
 .image img {
-  max-width: 250px;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
@@ -334,6 +334,9 @@ img {
     -ms-flex-pack: center;
         justify-content: center;
   }
+  .gallery {
+    padding: 4rem 0rem;
+  }
   .image img {
     display: block;
     text-align: center;
@@ -341,6 +344,12 @@ img {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
+    max-width: 200px;
+    height: auto;
+  }
+  img {
+    position: relative;
+    left: 30px;
   }
   .picture {
     position: relative;
@@ -351,6 +360,7 @@ img {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
+    padding: 4rem 0rem;
   }
   .picture_description {
     position: relative;

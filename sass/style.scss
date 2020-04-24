@@ -171,7 +171,7 @@
     .gallery {
         display: flex;
         flex-direction: row;
-        flex-basis: 33.3333%;
+        flex-basis: 33.333%;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
@@ -179,9 +179,9 @@
     .picture {
         width: 100px;
         list-style: none;
-        flex: 0 0 33.333333%;
+        flex: 0 0 25.333333%;
         text-align: center;
-        padding: 2rem 1rem;
+        margin: 2rem 1rem;
     }
     
     .image {
@@ -191,7 +191,7 @@
     }
     
     .image img {
-        max-width: 250px;
+        max-width: 100%;
         height: auto;
         object-fit: cover;
         display: block;
@@ -312,11 +312,20 @@
             align-items: center;
             justify-content: center;
         }
+        .gallery {
+            padding: 4rem 0rem;
+        }
         .image img {
             display: block;
             text-align: center;
             align-items: center;
             justify-content: center;
+            max-width: 200px;
+            height: auto;
+        }
+        img {
+            position: relative;
+            left: 30px;
         }
         .picture {
             position: relative;
@@ -325,6 +334,7 @@
             text-align: center;
             align-items: center;
             justify-content: center;
+            padding: 4rem 0rem;
         }
         .picture_description {
             position: relative;
